@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
@@ -52,27 +55,46 @@
         </nav>
       </div>
       <div class="header__content">
-        <nav class="pagination">
+        <div class="pagination">
           <ul class="header__nav">
-            <li class="header__nav-item">
+            <li class="active">
               <!-- icon -->
-              <a href="#" class="header__nav-link">Home</a>
+              <a href="#" class="">
+               <ion-icon name="home-outline"></ion-icon>
+              </a>
             </li>
-            <li class="header__nav-item">
+            <li class="">
               <!-- icon -->
-              <a href="#" class="header__nav-link">About</a>
+              <a href="#" class="">
+               <ion-icon name="help-outline"></ion-icon>
+              </a>
             </li>
-            <li class="header__nav-item">
+            <li class="">
               <!-- icon -->
-              <a href="#" class="header__nav-link">Contacts</a>
+              <a href="#" class="">
+                 <ion-icon name="call-outline"></ion-icon>
+               </a>
             </li>
-            <li class="header__nav-item">
+            <li class="">
               <!-- icon -->
-              <a href="#" class="header__nav-link">Reviews</a>
+              <a href="#" class="">
+                 <ion-icon name="megaphone-outline">
+                 </ion-icon></a>
             </li>
+            <li class="">
+               <a href="#" class="">
+                  <ion-icon name="basket-outline"></ion-icon>
+               </a>
+            </li>
+            <div class="indicator"></div>
           </ul>
-        </nav>
-        <input type="text" placeholder="Try to find!" class="search" />
+        </div>
+        <div class="search__box">
+         <input type="text" placeholder="Try to find!" class="search" />
+         <a href="#" class="search__btn">
+            <ion-icon name="search-outline"></ion-icon>
+         </a>
+        </div>
         <div class="user">
           <a href="#" class="logIn">Log In</a>
           <button class="signUp">Sign Up!</button>
@@ -129,6 +151,8 @@
     <footer class="footer">
       <div class="container"></div>
     </footer>
+    <script>
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
