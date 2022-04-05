@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after{
+   box-sizing: border-box;
+}
+
+a{
+   color: inherit;
+   text-decoration: none;
+   text-transform: none;
+   font-family: inherit;
+}
+.header {
+   display: flex;
+   width: 100vw;
+   height: 90px;
+   position: fixed;
+}
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid black;
+   width: 260px;
+   height: 100vh;
+}
+.logo {
+   margin-top: 15px;
+width: 90px;
+height: 60px;
+border: 1px solid black;
+}
+.side__nav {   
+   display: flex;
+   flex-direction: column;
+}
+.nav__title{
+   margin-top: calc(15px + 40px);
+   font-size: 36px;
+   margin-bottom: 40px;
+}
+.side__list{
+   margin-left: 30px;
+   font-size: 18px;
+}
+.side__list-item {
+   margin-bottom: 20px;
+}
+.help {
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   text-align: center;
+}
+.help__link {
+   margin-left: 5px;
+}
+.header__content{
+   width: 100%;
+   height: 100%;
+   border: 3px solid black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.pagination {
+   margin-left: 10px;
+}
+.header__nav {
+   display: flex;
+}
+.header__nav-item {
+   margin-left: 10px;
+}
+.header__nav-link {
+   font-size: 18px;
+}
+.search {
+   outline: none;
+   width: 400px;
+   height: 35px;
+   border-radius: 20px;
+   background: blue;
+   color: aliceblue;
+}
+.user {
+   margin-right: 25px;
+}
+.logIn {
+   margin-right: 25px;
+}
+.signUp {
+}
+main{
+   display: flex;
+   justify-content: flex-end;
+}
+section{
+   width: calc(100vw - 230px);
+   height: 100%;
+   border: 1px solid black;
+}
+.adds{
+   margin-top: 90px;
+   height: calc(100vh - 90px);
+}
+.add__block{
+   margin-left: 50px;
+   margin-top: 35px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   gap: 20px;
+}
+.add__item{
+   width: 400px;
+   height: 220px;
+   border: 1px solid black;
+}
+.item__cards{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 20px;
+}
+.card{
+   width: 220px;
+   height: 320px;
+   border: 1px solid yellow;
+}
+.footer {
+}
